@@ -12,7 +12,7 @@ const SkeletonCard = () => (
   </div>
 );
 
-const API_URL = 'https://rivy-storefront.onrender.com/api/products';
+const API_URL = 'https://rivy-storefront-h1y3.onrender.com/api/products';
 
 const DummyStorefront: React.FC = () => {
   const [products, setProducts] = useState([]);

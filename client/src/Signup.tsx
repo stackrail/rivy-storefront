@@ -13,7 +13,7 @@ const Signup: React.FC = () => {
     e.preventDefault();
     setMessage('');
     try {
-      const res = await fetch('https://rivy-storefront.onrender.com/api/users/signup', {
+      const res = await fetch('https://rivy-storefront-h1y3.onrender.com/api/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password })
