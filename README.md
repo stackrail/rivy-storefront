@@ -1,12 +1,12 @@
 # Rivy Storefront - Solar Equipment E-commerce
 
-A full-stack e-commerce storefront for solar equipment with React frontend, Node.js backend, and PostgreSQL database.
+A full-stack e-commerce storefront for solar equipment with React frontend, Node.js backend, and MongoDB database.
 
 ## 🏗️ Tech Stack
 
 - **Frontend**: React 18 with TypeScript
 - **Backend**: Node.js with Express and TypeScript
-- **Database**: PostgreSQL with Sequelize ORM
+- **Database**: MongoDB with Mongoose ORM
 - **Testing**: Jest for both frontend and backend
 - **Documentation**: OpenAPI/Swagger
 - **Deployment**: Docker & Docker Compose
@@ -20,12 +20,16 @@ A full-stack e-commerce storefront for solar equipment with React frontend, Node
 - **Order Management**: View order history and status
 - **Admin Features**: Basic authentication for admin actions (optional)
 
+## 🌐 Live Demo
+
+- **Submission Link:** https://rivy-storefront2.vercel.app/
+
 ## 🛠️ Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
-- PostgreSQL 14+
+- MongoDB (Atlas or local)
 - Docker & Docker Compose (recommended)
 
 ### Local Development with Docker
@@ -60,17 +64,11 @@ npm run setup
 
 ```bash
 cp server/.env.example server/.env
-# Edit server/.env with your database credentials
+# Edit server/.env with your MongoDB connection string
 ```
 
-3. Start PostgreSQL and create database
-4. Seed the database
-
-```bash
-npm run seed
-```
-
-5. Start development servers
+3. Ensure MongoDB is running locally or use MongoDB Atlas
+4. Start development servers
 
 ```bash
 npm run dev
@@ -102,9 +100,7 @@ API documentation is available at `/api-docs` when the server is running.
 
 ## �� Deployment
 
-- **Frontend (Vercel)**: https://rivy-storefront-c2vk.vercel.app
-- **Backend (Render)**: https://rivy-storefront.onrender.com
-- **API Docs**: https://rivy-storefront.onrender.com/api-docs
+- **Submission Link:** https://rivy-storefront2.vercel.app/
 
 ## 🏗️ Project Structure
 
