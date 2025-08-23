@@ -116,7 +116,7 @@ const DummyStorefront: React.FC = () => {
             <a href="/signup" className="auth-btn" style={{fontWeight: 600}}>Sign Up</a>
           </div>
         </div>
-  <div className="hero-section" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '300px', textAlign: 'center', margin: '32px 0'}}>
+  <div className="hero-section" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '60vh', textAlign: 'center', margin: '32px 0'}}>
           <h1 style={{fontSize: '2.2rem', fontWeight: 700, marginBottom: '12px'}}>Bright Power, Brighter Future</h1>
           <p style={{fontSize: '1.2rem', color: '#555', marginBottom: '24px'}}>Affordable, sustainable energy designed for every home and business.</p>
           <div style={{display: 'flex', justifyContent: 'center', gap: '16px'}}>
