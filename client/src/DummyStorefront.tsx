@@ -105,18 +105,18 @@ const DummyStorefront: React.FC = () => {
         </div>
       )}
       <header className="storefront-header">
-        <div className="top-nav" style={{width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-          <img src="https://energystack.staging.rivy.co/assets/png/energystack-logo-4cbeb065.png" alt="Rivy logo" className="storefront-logo" />
-          <div>
+        <div className="top-nav" style={{width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 32px'}}>
+          <img src="https://energystack.staging.rivy.co/assets/png/energystack-logo-4cbeb065.png" alt="Rivy logo" className="storefront-logo" style={{height: '48px'}} />
+          <div style={{display: 'flex', alignItems: 'center', gap: '18px'}}>
             <a href="/cart" className="cart-btn" style={{position: 'relative', display: 'inline-flex', alignItems: 'center'}}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#007b3a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"/></svg>
               {cartCount > 0 && <span style={{position:'absolute',top:'-6px',right:'-10px',background:'#007b3a',color:'#fff',borderRadius:'50%',padding:'2px 8px',fontSize:'0.9rem',fontWeight:600}}>{cartCount}</span>}
             </a>
-            <a href="/login" className="auth-btn" style={{marginRight: '8px'}}>Login</a>
-            <a href="/signup" className="auth-btn">Sign Up</a>
+            <a href="/login" className="auth-btn" style={{marginRight: '8px', fontWeight: 600}}>Login</a>
+            <a href="/signup" className="auth-btn" style={{fontWeight: 600}}>Sign Up</a>
           </div>
         </div>
-        <div className="hero-section" style={{textAlign: 'center', margin: '32px 0'}}>
+  <div className="hero-section" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '300px', textAlign: 'center', margin: '32px 0'}}>
           <h1 style={{fontSize: '2.2rem', fontWeight: 700, marginBottom: '12px'}}>Bright Power, Brighter Future</h1>
           <p style={{fontSize: '1.2rem', color: '#555', marginBottom: '24px'}}>Affordable, sustainable energy designed for every home and business.</p>
           <div style={{display: 'flex', justifyContent: 'center', gap: '16px'}}>
