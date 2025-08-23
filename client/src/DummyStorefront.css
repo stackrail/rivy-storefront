@@ -13,6 +13,7 @@
   padding: 32px 0 16px 0;
   border-bottom: 1px solid #eee;
   justify-content: center;
+  background: linear-gradient(90deg, #e0ffe7 0%, #f7f7f7 100%);
 }
 
 .storefront-logo {
@@ -35,10 +36,12 @@
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .product-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: translateY(-2px) scale(1.03);
 }
 
 .product-image {
@@ -47,6 +50,7 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
 .product-name {
@@ -92,4 +96,65 @@
 
 .storefront-footer a:hover {
   text-decoration: underline;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px;
+  max-width: 400px;
+  width: 90vw;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content button {
+  background: #007b3a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.modal-content button:hover {
+  background: #005f2a;
+}
+
+/* Skeleton loader styles */
+.skeleton {
+  animation: pulse 1.5s infinite;
+  opacity: 0.7;
+}
+.skeleton-bg {
+  background: #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.7; }
+}
+
+/* Enhanced product card and header */
+.footer-links {
+  margin-bottom: 8px;
 }

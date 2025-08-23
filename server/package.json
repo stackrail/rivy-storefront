@@ -4,8 +4,8 @@
   "description": "Backend API for Rivy solar equipment storefront",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-  "build": "npx tsc",
+  "dev": "nodemon src/app.ts",
+    "build": "tsc",
     "start": "node dist/app.js",
     "test": "jest",
     "test:watch": "jest --watch",

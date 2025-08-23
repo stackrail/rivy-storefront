@@ -18,7 +18,12 @@ const MONGO_URI = process.env.MONGO_URI || '';
 
 
 // CORS
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://rivy-storefront.vercel.app'
+  ]
+}));
 
 // Rate limiting
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));
