@@ -1,3 +1,16 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  width: 100%;
+  min-height: 300px;
+}
+.hero-section h1,
+.hero-section p {
+  text-align: center !important;
+}
 .dummy-storefront {
   background: #fff;
   min-height: 100vh;
