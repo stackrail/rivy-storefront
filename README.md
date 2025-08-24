@@ -5,7 +5,7 @@ A full-stack e-commerce storefront for solar equipment with React frontend, Node
 ## 🏗️ Tech Stack
 
 - **Frontend**: React 18 with TypeScript
-- **Backend**: Node.js with Express and TypeScript  
+- **Backend**: Node.js with Express and TypeScript
 - **Database**: PostgreSQL with Sequelize ORM
 - **Testing**: Jest for both frontend and backend
 - **Documentation**: OpenAPI/Swagger
@@ -15,7 +15,7 @@ A full-stack e-commerce storefront for solar equipment with React frontend, Node
 
 - **Product Catalog**: Browse solar equipment with search, filtering, and pagination
 - **Product Details**: Detailed product information with images and specifications
-- **Shopping Cart**: Add/remove items, update quantities  
+- **Shopping Cart**: Add/remove items, update quantities
 - **Checkout**: Simulated payment flow with order creation
 - **Order Management**: View order history and status
 - **Admin Features**: Basic authentication for admin actions (optional)
@@ -31,12 +31,14 @@ A full-stack e-commerce storefront for solar equipment with React frontend, Node
 ### Local Development with Docker
 
 1. Clone the repository
+
 ```bash
 git clone <your-repo-url>
 cd rivy-storefront
 ```
 
 2. Start the application
+
 ```bash
 npm run docker:up
 ```
@@ -49,11 +51,13 @@ npm run docker:up
 ### Local Development without Docker
 
 1. Install dependencies
+
 ```bash
 npm run setup
 ```
 
 2. Set up environment variables
+
 ```bash
 cp server/.env.example server/.env
 # Edit server/.env with your database credentials
@@ -61,11 +65,13 @@ cp server/.env.example server/.env
 
 3. Start PostgreSQL and create database
 4. Seed the database
+
 ```bash
 npm run seed
 ```
 
 5. Start development servers
+
 ```bash
 npm run dev
 ```
@@ -73,16 +79,19 @@ npm run dev
 ## 🧪 Testing
 
 Run all tests:
+
 ```bash
 npm test
 ```
 
 Run server tests only:
+
 ```bash
 npm run server:test
 ```
 
 Run client tests only:
+
 ```bash
 npm run client:test
 ```
@@ -93,8 +102,9 @@ API documentation is available at `/api-docs` when the server is running.
 
 ## �� Deployment
 
-- **Live URL**: [To be added]
-- **API Docs**: [To be added]
+- **Frontend (Vercel)**: https://rivy-storefront-c2vk.vercel.app
+- **Backend (Render)**: https://rivy-storefront.onrender.com
+- **API Docs**: https://rivy-storefront.onrender.com/api-docs
 
 ## 🏗️ Project Structure
 
@@ -110,11 +120,13 @@ rivy-storefront/
 ## ⚖️ Trade-offs and Future Improvements
 
 ### Current Trade-offs
+
 - Simulated payment system (no real payment gateway)
 - Basic inventory management
 - Simple authentication system
 
 ### Future Improvements
+
 - Real payment integration (Stripe, PayPal)
 - Advanced inventory management with reservations
 - Image optimization and CDN integration
