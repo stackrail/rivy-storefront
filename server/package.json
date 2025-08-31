@@ -2,11 +2,11 @@
   "name": "rivy-storefront-server",
   "version": "1.0.0",
   "description": "Backend API for Rivy solar equipment storefront",
-  "main": "dist/index.js",
+  "main": "dist/app.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
+  "build": "npx tsc",
+    "start": "node dist/app.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "seed": "ts-node src/seeders/index.ts"
