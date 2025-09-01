@@ -8,32 +8,32 @@ const products = [
     description: 'High-efficiency monocrystalline panel for residential and commercial solar installations.',
     price: '₦95,000',
     minOrder: 'Min. order: 2 units',
-    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80', // New solar panel
+    image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80', // Solar panel
   },
   {
     name: 'BrightLite 5kVA Hybrid Inverter',
     description: 'Advanced 5kVA inverter with hybrid technology for seamless solar and grid integration.',
     price: '₦520,000',
-    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80', // New inverter
+    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // Inverter
   },
   {
     name: 'EcoCell 2.4kWh Lithium Battery',
     description: 'Reliable lithium battery for energy storage and backup power.',
     price: '₦180,000',
     minOrder: 'Min. order: 5 units',
-    image: 'https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=400&q=80', // New lithium battery
+    image: 'https://images.unsplash.com/photo-1581090700227-1c1b1b1b1b1b?auto=format&fit=crop&w=400&q=80', // Lithium battery
   },
   {
     name: 'SolarGlow 80W Street Light',
     description: 'All-in-one solar street light with motion sensor and long-lasting LED.',
     price: '₦120,000',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80', // New street light
+    image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80', // Street light
   },
   {
     name: 'PowerMax 150A MPPT Controller',
     description: 'Smart MPPT charge controller for optimal solar power management.',
     price: '₦250,000',
-    image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80', // New MPPT controller
+    image: 'https://images.unsplash.com/photo-1470259078422-826894b933aa?auto=format&fit=crop&w=400&q=80', // MPPT controller
   },
 ];
 
