@@ -14,7 +14,7 @@ import swaggerJsdoc from 'swagger-jsdoc';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/rivy-storefront';
+const MONGO_URI = process.env.MONGO_URI || '';
 
 
 // CORS
@@ -27,8 +27,14 @@ app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));
 app.use(morgan('dev'));
 
 app.use(express.json());
+// Root route
+app.get('/', (req, res) => {
+  res.send('RIVY Storefront API is running!');
+});
 
-// Swagger OpenAPI setup
+import dotenv from 'dotenv';
+dotenv.config();
+
 const swaggerOptions = {
   definition: {
     openapi: '3.0.0',
@@ -36,9 +42,9 @@ const swaggerOptions = {
       title: 'RIVY Storefront API',
       version: '1.0.0',
       description: 'API documentation for RIVY Storefront',
-    },
+    }
   },
-  apis: ['./src/routes/*.ts'],
+  apis: ['./src/routes/*.ts']
 };
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
@@ -59,6 +65,7 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 
 
 if (process.env.NODE_ENV !== 'test') {
+  console.log('MONGO_URI from .env:', process.env.MONGO_URI);
   mongoose.connect(MONGO_URI)
     .then(() => {
       console.log('Connected to MongoDB');
